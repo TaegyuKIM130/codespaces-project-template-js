@@ -18,6 +18,7 @@ import linkedInIcon from "../images/socials/linkedin.svg";
 import mediumIcon from "../images/socials/medium.svg";
 import twitterIcon from "../images/socials/twitter.svg";
 import youTubeIcon from "../images/socials/youtube.svg";
+import homepageIcon from "../images/socials/logomul.png";
 
 /**
  * 💡 Learning resources
@@ -38,6 +39,7 @@ const Footer = (props) => {
     primaryColor,
     twitter,
     youTube,
+    homepage,
   } = props;
 
   return (
@@ -77,7 +79,7 @@ const Footer = (props) => {
         )}
         {instagram && (
           <a
-            href={`https://www.instagram.com/${instagram}`}
+            href={`https://www.instagram.com/leomessi/${instagram}`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -99,17 +101,26 @@ const Footer = (props) => {
           </a>
         )}
         {twitter && (
-          <a href={`https://twitter.com/${twitter}`} target="_blank" rel="noopener noreferrer">
+          <a href={`https://x.com/elonmusk/${twitter}`} target="_blank" rel="noopener noreferrer">
             <img src={twitterIcon} alt="Twitter" className="socialIcon" />
           </a>
         )}
         {youTube && (
           <a
-            href={`https://www.youtube.com/c/${youTube}`}
+            href={`https://www.youtube.com/channel/UC1KHPyA5XiRMxiXcV9kruNA/c/${youTube}`}
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={youTubeIcon} alt="YouTube" className="socialIcon" />
+          </a>
+        )}
+        {homepage && (
+          <a
+            href={`https://physics.knu.ac.kr/`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={homepageIcon} alt="YouTube" className="socialIcon" />
           </a>
         )}
       </div>

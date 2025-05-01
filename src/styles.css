@@ -41,6 +41,18 @@ section img.background {
   position: absolute;
   top: 0;
   transform: translate(-50%, 0);
+  width: 50vmax;
+  z-index: -1;
+}
+
+section img.background2 {
+  height: 100%;
+  left: 50%;
+  object-fit: cover;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, 0);
   width: 100vmax;
   z-index: -1;
 }
